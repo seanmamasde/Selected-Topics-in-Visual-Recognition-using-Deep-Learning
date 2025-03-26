@@ -1,8 +1,8 @@
-
 # Selected Topics in Visual Recognition using Deep Learning HW1 Report
 
 - **Name:** 馬楷翔
 - **Student ID:** 110550074
+- **Github Repo:** <https://github.com/seanmamasde/Selected-Topics-in-Visual-Recognition-using-Deep-Learning>
 
 ## Introduction
 
@@ -13,24 +13,27 @@ This report describes the approach that I used to fine-tuning deep convolutional
 ### Data Preprocessing
 
 The dataset is organized as follows:
+
 - **train:** 100 folders (classes labeled from 0 to 99) containing training images.
 - **val:** 100 folders with validation images.
 - **test:** A single folder with test images.
 
 Image pre-processing includes:
+
 - **Training transforms:** Resize to 256, random crop to 224, random horizontal flip, conversion to tensor, and normalization using mean [0.485, 0.456, 0.406] and standard deviation [0.229, 0.224, 0.225].
 - **Validation/Test transforms:** Resize to 256, center crop to 224, conversion to tensor, and identical normalization.
 
 ### Model Architecture and Hyperparameters
 
 1. **RegNet Baseline:**
+
    - **Architecture:** `regnety_160` from the timm library (pre-trained on ImageNet).
    - **Hyperparameters:** Batch size = 32, learning rate = 1e-4, 10 epochs.
    - **Performance:** Approximately 91% accuracy on the test set.
 
 2. **SEResNeXt with Bagging:**
    - **Architecture:** `seresnext101_64x4d` from timm (pre-trained on iNaturalist).
-   - **Bagging Details:**  
+   - **Bagging Details:**
      - **Ensemble Size:** 10 models.
      - **Training:** Each model is trained on a bootstrapped sample of the training data.
      - **Hyperparameters:** Batch size = 80, learning rate = 1e-4, 20 epochs per model.
@@ -40,6 +43,7 @@ Image pre-processing includes:
 ### Model Training and Saving
 
 To prevent loss of progress in case of hardware interruptions, I implemented a mechanism to save models:
+
 - **Validation Check:** After every epoch, the model is evaluated on the validation set.
 - **Saving Criteria:** If the current epoch's validation accuracy is higher than the best recorded, the model state is saved as `./saved_models/model{model_index}_{epoch}.pth`.
 
@@ -60,7 +64,7 @@ for epoch in range(num_epochs):
         running_loss += loss.item()
     avg_loss = running_loss / len(bagged_loader)
     print(f"Epoch {epoch+1}/{num_epochs}, Loss: {avg_loss:.4f}")
-    
+
     # Validation evaluation
     model.eval()
     correct, total = 0, 0
@@ -73,7 +77,7 @@ for epoch in range(num_epochs):
             total += labels.size(0)
     val_acc = correct / total
     print(f"Validation Accuracy: {val_acc:.4f}")
-    
+
     # Save model if improved
     if val_acc > best_acc:
         best_acc = val_acc
@@ -91,6 +95,7 @@ For inference, a custom test dataset is defined that also returns image filename
 ### Performance Summary
 
 - **RegNet (Baseline):**
+
   - **Test Accuracy:** 91%
   - **Training Time:** Approximately 40 minutes on an A100 40GB GPU.
 
@@ -102,10 +107,10 @@ For inference, a custom test dataset is defined that also returns image filename
 ### Training Curves
 
 - RegNet training curve
-![image](./regnet.png)
+  ![image](./regnet.png)
 
 - SEResNeXt training curve
-![image](./seresnext.png)
+  ![image](./seresnext.png)
 
 - I feel like the seresnext one got converged faster than the regnet one (comparing the first 10 epochs trained).
 
@@ -119,7 +124,6 @@ We hypothesized that bagging—training multiple models on bootstrapped samples�
 
 - **Ensemble Creation:**  
   Ten SEResNeXt models were independently trained on different bootstrapped subsets of the training data.
-  
 - **Model Aggregation:**  
   During inference, each model produced a prediction for a given image. The final label was determined using majority voting across all ensemble predictions.
 
@@ -130,11 +134,10 @@ We hypothesized that bagging—training multiple models on bootstrapped samples�
 
 - **Accuracy Improvement:**  
   The bagging approach improved the test accuracy from around 92% (when using RegNet with bagging) to 94% with SEResNeXt, validating our hypothesis.
-  
 - **Computational Trade-off:**  
   While bagging provided a notable performance boost, it also increased the training time significantly (from 40 minutes without bagging to 6 hours with bagging when training RegNet, and a whopping 8 hours when training SEResNeXt).
 
-- **Implication for Future Work:** 
+- **Implication for Future Work:**
   Ensemble methods like bagging can be particularly beneficial when the pre-training domain of the model aligns closely with the target dataset. Further experiments could explore optimizing the number of ensemble members or integrating more diverse architectures.
 
 ## References
