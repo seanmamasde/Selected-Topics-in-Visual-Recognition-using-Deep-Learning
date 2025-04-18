@@ -1,0 +1,480 @@
+/content/drive/MyDrive/Colab Notebooks/computer_vision/2/src# python trainer.py --data-root /content/data/nycu-hw2-data --epochs 30 --batch-size 16 --lr 0.005 --output-dir ../outputs/$(date +%Y%m%d_%H%M%S)
+[Train] 01: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:56<00:00,  1.37it/s, loss=0.182]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:15<00:00,  2.77it/s, loss=0.253]
+Detecting 3340 images → val_pred_e1.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:30<00:00, 36.97it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e1.json
+loading annotations into memory...
+Done (t=0.17s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.09s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=3.34s).
+Accumulating evaluation results...
+DONE (t=0.74s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.451
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.918
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.373
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.438
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.499
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.578
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.508
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.550
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.550
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.542
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.584
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.583
+[Epoch 01] val_loss=0.2311 | acc=0.3427
+✓ best‑loss model updated
+[Train] 02: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:17<00:00,  1.41it/s, loss=0.220]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:14<00:00,  2.81it/s, loss=0.246]
+Detecting 3340 images → val_pred_e2.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:23<00:00, 39.76it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e2.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.23s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=3.04s).
+Accumulating evaluation results...
+DONE (t=0.68s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.463
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.930
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.388
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.451
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.509
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.621
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.517
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.560
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.560
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.551
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.591
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.639
+[Epoch 02] val_loss=0.2288 | acc=0.3863
+✓ best‑loss model updated
+[Train] 03: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:17<00:00,  1.40it/s, loss=0.230]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:14<00:00,  2.81it/s, loss=0.262]
+Detecting 3340 images → val_pred_e3.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:23<00:00, 40.04it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e3.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.24s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=3.06s).
+Accumulating evaluation results...
+DONE (t=0.62s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.457
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.926
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.372
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.446
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.499
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.606
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.510
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.552
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.552
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.579
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.620
+[Epoch 03] val_loss=0.2289 | acc=0.4378
+[Train] 04: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:12<00:00,  1.41it/s, loss=0.226]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:14<00:00,  2.80it/s, loss=0.268]
+Detecting 3340 images → val_pred_e4.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:23<00:00, 40.04it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e4.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.78s).
+Accumulating evaluation results...
+DONE (t=0.59s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.453
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.932
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.359
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.442
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.497
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.570
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.504
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.547
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.547
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.539
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.576
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.590
+[Epoch 04] val_loss=0.2275 | acc=0.4757
+✓ best‑loss model updated
+[Train] 05: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:11<00:00,  1.41it/s, loss=0.235]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:14<00:00,  2.82it/s, loss=0.231]
+Detecting 3340 images → val_pred_e5.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:24<00:00, 39.62it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e5.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.06s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.83s).
+Accumulating evaluation results...
+DONE (t=0.56s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.461
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.932
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.388
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.449
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.507
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.594
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.514
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.555
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.555
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.547
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.585
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.604
+[Epoch 05] val_loss=0.2203 | acc=0.5101
+✓ best‑loss model updated
+[Train] 06: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:09<00:00,  1.41it/s, loss=0.178]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:14<00:00,  2.82it/s, loss=0.226]
+Detecting 3340 images → val_pred_e6.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:22<00:00, 40.33it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e6.json
+loading annotations into memory...
+Done (t=0.18s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.06s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.84s).
+Accumulating evaluation results...
+DONE (t=0.56s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.457
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.930
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.374
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.445
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.504
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.621
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.510
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.550
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.550
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.541
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.584
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.639
+[Epoch 06] val_loss=0.2214 | acc=0.5172
+[Train] 07: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:08<00:00,  1.41it/s, loss=0.159]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.83it/s, loss=0.250]
+Detecting 3340 images → val_pred_e7.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:22<00:00, 40.46it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e7.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.06s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.85s).
+Accumulating evaluation results...
+DONE (t=0.58s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.448
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.925
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.357
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.438
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.493
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.603
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.508
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.549
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.549
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.540
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.582
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.617
+[Epoch 07] val_loss=0.2212 | acc=0.4870
+[Train] 08: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:07<00:00,  1.42it/s, loss=0.220]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.83it/s, loss=0.265]
+Detecting 3340 images → val_pred_e8.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:23<00:00, 40.20it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e8.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.63s).
+Accumulating evaluation results...
+DONE (t=0.75s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.454
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.928
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.371
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.443
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.496
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.590
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.505
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.537
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.574
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.601
+[Epoch 08] val_loss=0.2225 | acc=0.5275
+[Train] 09: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:08<00:00,  1.41it/s, loss=0.141]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.84it/s, loss=0.263]
+Detecting 3340 images → val_pred_e9.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:24<00:00, 39.39it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e9.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.06s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.96s).
+Accumulating evaluation results...
+DONE (t=0.58s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.447
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.927
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.348
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.433
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.499
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.616
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.503
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.544
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.544
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.535
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.578
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.635
+[Epoch 09] val_loss=0.2199 | acc=0.5044
+✓ best‑loss model updated
+[Train] 10: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:08<00:00,  1.41it/s, loss=0.185]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.83it/s, loss=0.240]
+Detecting 3340 images → val_pred_e10.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:22<00:00, 40.37it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e10.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.06s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.85s).
+Accumulating evaluation results...
+DONE (t=0.55s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.449
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.922
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.362
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.437
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.499
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.636
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.505
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.547
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.547
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.538
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.576
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.646
+[Epoch 10] val_loss=0.2165 | acc=0.5413
+✓ best‑loss model updated
+[Train] 11: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:10<00:00,  1.41it/s, loss=0.159]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.84it/s, loss=0.251]
+Detecting 3340 images → val_pred_e11.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:22<00:00, 40.51it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e11.json
+loading annotations into memory...
+Done (t=0.17s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.64s).
+Accumulating evaluation results...
+DONE (t=0.50s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.447
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.921
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.353
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.435
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.497
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.613
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.504
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.542
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.542
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.532
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.578
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.622
+[Epoch 11] val_loss=0.2200 | acc=0.6466
+[Train] 12: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [29:22<00:00,  1.07it/s, loss=0.162]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.83it/s, loss=0.246]
+Detecting 3340 images → val_pred_e12.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:22<00:00, 40.34it/s]
+JSON saved to ../outputs/20250418_052446/val_pred_e12.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.61s).
+Accumulating evaluation results...
+DONE (t=0.50s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.440
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.918
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.334
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.428
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.489
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.603
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.503
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.540
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.540
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.532
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.570
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.615
+[Epoch 12] val_loss=0.2243 | acc=0.6562
+
+---
+
+/content/drive/MyDrive/Colab Notebooks/computer_vision/2/src# python trainer.py --data-root /content/data/nycu-hw2-data --epochs 30 --batch-size 16 --lr 0.005 --output-dir ../outputs/$(date +%Y%m%d_%H%M%S) --pth-path ../outputs/20250418_052446/model_e12.pth 
+/usr/local/lib/python3.11/dist-packages/torch/optim/lr_scheduler.py:227: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+✓ resumed from ../outputs/20250418_052446/model_e12.pth (epoch 12)
+[Train] 13: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:50<00:00,  1.37it/s, loss=0.115]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:15<00:00,  2.79it/s, loss=0.258]
+Detecting 3340 images → val_pred_e13.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:29<00:00, 37.49it/s]
+JSON saved to ../outputs/20250418_103631/val_pred_e13.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.21s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.39s).
+Accumulating evaluation results...
+DONE (t=0.49s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.440
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.918
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.334
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.428
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.489
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.613
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.502
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.539
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.539
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.530
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.570
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.627
+[Epoch 13] tr_loss=0.1300 | val_loss=0.2272 | acc=0.6753
+✓ best‑loss model updated
+[Train] 14: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:11<00:00,  1.41it/s, loss=0.132]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.84it/s, loss=0.255]
+Detecting 3340 images → val_pred_e14.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:22<00:00, 40.27it/s]
+JSON saved to ../outputs/20250418_103631/val_pred_e14.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.45s).
+Accumulating evaluation results...
+DONE (t=0.50s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.438
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.916
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.330
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.425
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.489
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.615
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.500
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.537
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.537
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.528
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.569
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.630
+[Epoch 14] tr_loss=0.1282 | val_loss=0.2288 | acc=0.6746
+[Train] 15: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 1879/1879 [22:09<00:00,  1.41it/s, loss=0.135]
+[Valid]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 209/209 [01:13<00:00,  2.84it/s, loss=0.258]
+Detecting 3340 images → val_pred_e15.json
+[Infer]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3340/3340 [01:23<00:00, 40.12it/s]
+JSON saved to ../outputs/20250418_103631/val_pred_e15.json
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.04s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.54s).
+Accumulating evaluation results...
+DONE (t=0.49s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.436
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.915
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.328
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.424
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.488
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.612
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.499
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.536
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.536
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.568
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.627
+[Epoch 15] tr_loss=0.1271 | val_loss=0.2296 | acc=0.6779
