@@ -7,4 +7,4 @@
 | :------: | :-----------------------------------------------------------------------------------------------------: |
 | [1](./1) | [Google Drive](https://drive.google.com/drive/folders/1KZvyywnpgjzYs_j5HNzRJ2X5aUCQXvpG?usp=drive_link) |
 | [2](./2) |  [Google Drive](https://drive.google.com/drive/folders/1fuLryumPKyWAtCD4WC_0Ha9B_ugRsr-D?usp=sharing)   |
-|    3     |                Google Drive (There's 2 links, see the ./3/report/report.md for details)                 |
+| [3](./3) |          Google Drive (There's 2 links, see the [report.md](./3/report/report.md) for details)          |
